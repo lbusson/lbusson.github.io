@@ -191,7 +191,7 @@
 
   <div data-role="main" class="ui-content">
     <!-- customer feedback form -->
-    <form action="form.php" method="post">
+    <form action="formsubmit.php" method="post" data-ajax="false">
       <div data-role="fieldcontain">
         <!-- input for customer name -->
         <input type="text" name="name" id="name" value=""  placeholder="Your Name"
@@ -205,7 +205,7 @@
       <input type="range" name="slider" id="slider" value="5" min="0" max="10"  />
       <h2>Leave us your feedback!</h2>
       <!-- text area for customer feedback -->
-      <textarea name="textarea" id="textarea-a" data-clear-btn="true"></textarea>
+      <textarea name="textarea" id="textarea" data-clear-btn="true"></textarea>
       <!-- submit button -->
       <input type="submit" value="Submit">
     </form>
