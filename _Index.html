@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Deekan Restaurant</title>
+<!-- custom theme. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="themes/Theme.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+<!-- home page. -->
+<div data-role="page" id="Home">
+  <div data-role="header">
+  <!-- empty header, just in case. -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <hr/>
+    <!-- image header for home page. -->
+    <img src="images/Logo.png" style="width:100%;height:100%;">
+    <hr/>
+    <!-- main navigation. -->
+    <!-- button linking to menu items. -->
+    <a href="#Menu" class="ui-btn ui-icon-bullets ui-btn-icon-bottom">Menu</a>
+    <!-- grid to keep bottom buttons side-by-side. -->
+    <div class="ui-grid-a" id="main-menu">
+      <!-- link to about us page. -->
+      <div class="ui-block-a"> <a href="#Info" 
+      class="ui-btn ui-icon-info ui-btn-icon-bottom">About Us</a> </div>
+      <!-- link to feedback page. -->
+      <div class="ui-block-b"> <a href="#Feedback" 
+      class="ui-btn ui-icon-mail ui-btn-icon-bottom">Feedback</a> </div>
+    </div>
+  </div>
+  <!-- footer containing developer and version information. -->
+  <div data-role="footer" data-position="fixed">
+    <h3>
+      <!-- container for footer information, to keep things centered. -->
+      <div class="ui-grid-solo">
+        <div class="ui-block-a"> 
+        	<a href="#Developer" class="ui-btn">
+        	Developed by Liam Busson. V1.0.</a> 
+        </div>
+      </div>
+    </h3>
+  </div>
+</div>
+
+<!-- menu page. -->
+<div data-role="page" id="Menu">
+<!-- header containing navigation to home and about pages. -->
+  <div data-role="header" data-position="fixed">
+    <h1>Menu</h1>
+    <div data-role="navbar">
+      <ul>
+        <!-- link to home page. -->
+        <li><a href="#Home">Home</a></li>
+        <!-- link to about us page. -->
+        <li><a href="#Info">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- filtered list of items on menu. -->
+  <div data-role="main" class="Content">
+    <ul data-role="listview" data-filter="true">
+      <!-- dividers with themed colours. -->
+      <li data-role="divider" style="background-color:#a93539; color:white;">Entrees</li>
+      <!-- link goes to an external page for each menu item. -->
+      <li><a href="Menu/E1.html" rel="external">Cheese Plate</a></li>
+      <!-- link goes to an external page for each menu item. -->
+      <li><a href="Menu/E2.html" rel="external">Calamari</a></li>
+      <!-- link goes to an external page for each menu item. -->
+      <li><a href="Menu/E3.html" rel="external">Chips</a></li>
+      <!-- dividers with themed colours. -->
+      <li data-role="divider" style="background-color:#a93539; color:white;">Mains</li>
+      <!-- link goes to an external page for each menu item. -->
+      <li><a href="Menu/M1.html" rel="external">Chicken Parmagiana</a></li>
+      <!-- link goes to an external page for each menu item. -->
+      <li><a href="Menu/M2.html" rel="external">Beef Burger</a></li>
+      <!-- link goes to an external page for each menu item. -->
+      <li><a href="Menu/M3.html" rel="external">Fish and Chips</a></li>
+      <!-- dividers with themed colours. -->
+      <li data-role="divider" style="background-color:#a93539; color:white;">Desserts</li>
+      <!-- link goes to an external page for each menu item. -->
+      <li><a href="Menu/D1.html" rel="external">Affogato</a></li>
+      <!-- link goes to an external page for each menu item. -->
+      <li><a href="Menu/D2.html" rel="external">Cheesecake</a></li>
+      <!-- link goes to an external page for each menu item. -->
+      <li><a href="Menu/D3.html" rel="external">Ice Cream Sundae</a></li>
+      <!-- dividers with themed colours. -->
+      <li data-role="divider" style="background-color:#a93539; color:white;">Drinks</li>
+      <!-- link goes to an external page for each menu item. -->
+      <li><a href="Menu/A1.html" rel="external">Coffee</a></li>
+      <!-- link goes to an external page for each menu item. -->
+      <li><a href="Menu/A2.html" rel="external">Tea</a></li>
+      <!-- link goes to an external page for each menu item. -->
+      <li><a href="Menu/A3.html" rel="external">Soda</a></li>
+    </ul>
+  </div>
+  <!-- footer containing developer and version information. -->
+  <div data-role="footer" data-position="fixed">
+    <h3>
+      <!-- container for footer information, to keep things centered. -->
+      <div class="ui-grid-solo">
+        <div class="ui-block-a" style="text-align: center;"> 
+          <a href="#Developer" class="ui-btn">Developed by Liam Busson. V1.0.</a> 
+        </div>
+      </div>
+    </h3>
+  </div>
+</div>
+
+<!-- about us page. -->
+<div data-role="page" id="Info">
+  <div data-role="header" data-position="fixed">
+    <!-- navbar with links to home and menu pages. -->
+    <div data-role="navbar">
+      <ul>
+        <!-- link to home page. -->
+        <li><a href="#Home">Home</a></li>
+        <!-- link to menu page. -->
+        <li><a href="#Menu">Menu</a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <!-- image header. -->
+    <img src="images/au.png" style="width:100%;height:100%;">
+    <!-- blurb about restaurant. -->
+    <br><br>
+    <p>
+      Deekan Restaurant is the classiest most swingin'ist joint on the Deakin
+      University campus. We have a 4 Michelin star chef heading
+      our kitchen, and the most passionate staff you have ever laid
+      eyes on. We are determined to make your time with us the most 
+      memorable time of your life!
+      <br>
+      If you're keen to have dinner here, you can call us, email us, 
+      or just rock up!
+    </p>
+    <br><br>
+    <!-- container for buttons. -->
+    <div id="contact_buttons">
+      <!-- button links to google maps. -->
+      <a href="https://www.google.com.au/maps/place/Deakin+University/
+      @-37.8478435,145.114873,17z/data=!3m1!4b1!4m2!3m1!1s0x6ad6405e2d
+      61e80f:0xf0456760532dab0" data-role="button" data-icon="location"
+       data-iconpos="bottom"> Find us on Google Maps </a>
+      <!-- button links to phone number. -->
+      <a href="tel:0444444444"  data-role="button" data-icon="grid" 
+      data-iconpos="bottom"> Call us </a>
+      <!-- button links to email address. -->
+      <a href="mailto:lbusson@deakin.edu.au"  data-role="button" 
+      data-icon="mail" data-iconpos="bottom"> Email us </a> 
+    </div>
+  </div>
+  <!-- footer containing developer and version information. -->
+  <div data-role="footer" data-position="fixed">
+    <h3>
+      <!-- container for footer information, to keep things centered. -->
+      <div class="ui-grid-solo">
+        <div class="ui-block-a" style="text-align: center;"> 
+          <a href="#Developer" class="ui-btn">Developed by Liam Busson. V1.0.</a> 
+        </div>
+      </div>
+    </h3>
+  </div>
+</div>
+
+<!-- feeback page. -->
+<div data-role="page" id="Feedback">
+  <!-- header containing navigation to home, menu, about pages. -->
+  <div data-role="header" data-position="fixed">
+    <h1>Feeback</h1>
+    <div data-role="navbar">
+      <ul>
+        <!-- link to home page. -->
+        <li><a href="#Home">Home</a></li>
+        <!-- link to menu page. -->
+        <li><a href="#Menu">Menu</a></li>
+        <!-- link to about us page. -->
+        <li><a href="#Info">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <!-- feedback form -->
+    <form action="form.php" method="post">
+      <div data-role="fieldcontain">
+        <!-- input for customer name -->
+        <input type="text" name="name" id="name" value=""  placeholder="Your Name"
+        data-clear-btn="true"/>
+        <!-- input for customer email address -->
+        <input type="text" name="email" id="email" value=""  placeholder="Your Email Address"
+        data-clear-btn="true"/>
+      </div>
+      <h2>Rate us!</h2>
+      <!-- slider for review score -->
+      <input type="range" name="slider" id="slider" value="5" min="0" max="10"  />
+      <h2>Leave us your feedback!</h2>
+      <!-- text area for customer feedback -->
+      <textarea name="textarea" id="textarea-a" data-clear-btn="true"></textarea>
+      <!-- submit button -->
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <!-- footer containing developer and version information. -->
+  <div data-role="footer" data-position="fixed">
+    <h3>
+      <!-- container for footer information, to keep things centered. -->
+      <div class="ui-grid-solo">
+        <div class="ui-block-a" style="text-align: center;">
+          <a href="#Developer" class="ui-btn">Developed by Liam Busson. V1.0.</a>
+        </div>
+      </div>
+    </h3>
+  </div>
+</div>
+
+<!-- about developer page. -->
+<div data-role="page" id="Developer">
+  <!-- header containing navication to home, menu, about pages. -->
+  <div data-role="header" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <!-- link to home page. -->
+        <li><a href="#Home">Home</a></li>
+        <!-- link to menu page. -->
+        <li><a href="#Menu">Menu</a></li>
+        <!-- link to about us page. -->
+        <li><a href="#Info">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <!-- image header. -->
+    <img src="images/dev.png" style="width:100%;height:100%;">
+    <!-- information about the developer -->
+    <p>
+      Liam Busson is an IT student at Deakin University, majoring in game design and development. 
+      He only has a year left to go on his degree, after which he'll most likely get a job at
+      McDonald's and earn slightly above minimum wage.
+      <br><br>
+      If you want to hire me for one of your upcoming projects, you can;
+      <br><br>
+      <!-- button links to phone number. -->
+      <a href="tel:0444444444"  data-role="button" data-icon="grid" 
+      data-iconpos="bottom"> Call me here </a>
+      <br>
+      <!-- button links to email address. -->
+      <a href="mailto:lbusson@deakin.edu.au"  data-role="button" 
+      data-icon="mail" data-iconpos="bottom"> Or email me here </a>       
+    </p>
+  </div>
+  <!-- footer containing developer and version information. -->
+  <div data-role="footer" data-position="fixed">
+    <h3>
+      <!-- container for footer information, to keep things centered. -->
+      <div class="ui-grid-solo">
+        <div class="ui-block-a"> Developed by Liam Busson. V1.0. </div>
+      </div>
+    </h3>
+  </div>
+</div>
+
+
+</body>
+</html>
